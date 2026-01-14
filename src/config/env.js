@@ -33,7 +33,7 @@ const config = {
   // CORS
   corsOrigins: process.env.CORS_ORIGINS 
     ? process.env.CORS_ORIGINS.split(',')
-    : ['http://localhost:8000', 'http://localhost:3004', 'https://travelbrain-3tfv.onrender.com'],
+    : ['http://localhost:8000', 'http://localhost:3004', 'http://localhost:5173', 'https://travelbrain-3tfv.onrender.com'],
 };
 
 /**
