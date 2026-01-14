@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const config = require('./env');
 
 // Configure mongoose
 mongoose.set('strictQuery', false);
@@ -9,8 +10,8 @@ mongoose.set('strictQuery', false);
  */
 const connectDB = async () => {
   try {
-    const mongoURI = process.env.MONGO_URI;
-    const mongoDB = process.env.MONGO_DB || 'travel_brain';
+    const mongoURI = config.mongoURI;
+    const mongoDB = config.mongoDB;
     
     // Build connection string
     let fullURI;
